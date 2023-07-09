@@ -1,0 +1,17 @@
+## Build image
+
+```
+docker build -t rustlings .
+```
+
+## Run docker container
+
+```
+docker run --rm --name rust-practice -v $(pwd):/usr/src/app -it rustlings bash
+```
+
+## Enter to created container
+
+```
+docker exec -it rust-practice bash
+```
